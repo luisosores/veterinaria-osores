@@ -155,6 +155,9 @@
 .seccion_4 .bloque_3 h1 {
   font-size: 3em;
 }
+.seccion_4 .bloque_3 li {
+  font-size: 1.2em;
+}
 @-webkit-keyframes desplazamiento {
   0% {
     transform: translateX(-150px);
@@ -241,7 +244,12 @@
   box-shadow: 0 0 15px rgb(0, 187, 187);
 }
 
+@font-face {
+  font-family: miFuente;
+  src: url(../fonts/Gotham-Light.otf);
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: miFuente;
 }/*# sourceMappingURL=estilos.css.map */
