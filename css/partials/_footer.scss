@@ -1,0 +1,28 @@
+.footer{
+    height: 600px;
+    color: #fff;
+    background-color: aqua;
+    ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            margin-bottom: 5px;
+        }
+    }
+    .caja_icono{
+        padding-top: 30px;
+        .iconosSociales{
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: all 0.7s ease;
+            &:hover{
+                transform: scale(1.5, 1.5);
+                box-shadow: 0 0 15px #fff;
+            }
+        }
+    }
+}
