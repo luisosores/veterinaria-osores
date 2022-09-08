@@ -1,0 +1,15 @@
+﻿En el archivo index.html sumé el SEO con las siguientes características:
+* Descripción: mediante la etiqueta meta name description, agregue el siguiente párrafo que explica el contenido de mi sitio: “Veterinaria especializada con 20 años de experiencia proporciona servicios integrales de la más alta calidad. Contamos con urgencias 24 hrs”.
+* Palabras Claves: mediante la etiqueta meta name keywords, agregue las palabras clave que acompañaran a todas las paginas de mi sitio:”mascotas, compañero, amigo, cuidado, perro, gato”.
+* Encabezado: 
+   * para el encabezado del h1 utilice el texto “contamos con los mejores veterinarios”.
+   * para el encabezado del h2 utilice el texto “Mejor equipo”,”Listo 24/7”,”Veterinarios Calificados”,”tasa de exito”.
+   * para el encabezado del h5 utilice el texto “Centro Veterinario”,”Luis Osores”.
+
+
+En el archivo nosotros.html sumé el SEO con las siguientes características:
+* Descripción: mediante la etiqueta meta name description, agregue el siguiente párrafo que explica el contenido de mi sitio: “Contamos con un grupo de profesionales de la más alta calidad donde ofrecemos cuidados preventivos, emergentes y de medicina interna para así mejorar la salud de tu mascota.”.
+* Palabras Claves: mediante la etiqueta meta name keywords, agregue las palabras clave que acompañaran a todas las paginas de mi sitio:”veterinario, veterinaria, profesional, mascotas, compañero, amigo, cuidado, perro, gato”.
+* Encabezado: 
+   * para el encabezado del h1 utilice el texto “Sobre Nosotros”.
+   * para el encabezado del h5 utilice el texto “Centro Veterinario”,”Luis Osores”.

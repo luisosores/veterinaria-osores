@@ -1,12 +1,11 @@
 .seccion_1{
-    background: map-get($var, seccion1);
-    height: 700px;
+    @include secciones($imgfondo: map-get($var, seccion1), $altura: 700px);
     @extend %backgroundfondo;
     .bloque_1{
         padding-left: 50px;
         width: 500px;
         h1{
-            @include tamanioTexto($tamanio: 3em, $espacio: 2px, $color: transparent, $anchura: false);
+           @include tamanioTexto($tamanio: 3em, $espacio: 2px, $color: transparent, $anchura: false);
             animation-name: textoDesplazamiento;
             animation-fill-mode: forwards;
             animation-duration: 3s;
@@ -45,8 +44,7 @@
     }
 }
 .seccion_3{
-    background-image: map-get($var, seccion3);
-    height: 500px;
+    @include secciones($imgfondo: map-get($var, seccion3), $altura: 500px);
     @extend %backgroundfondo;
     .bloque_2{
         padding-left: 10px;
@@ -58,5 +56,40 @@
                 font-weight: bold;
             }
         }
+    }
+}
+.seccion_4{
+    @include secciones($imgfondo: map-get($var, seccion4), $altura: 700px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bloque_3{
+        width: 500px;
+        animation-name: desplazamiento;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        color: transparent;
+        h1{
+            font-size: 3em;
+        }
+        @keyframes desplazamiento{
+            0%{
+                transform: translateX(-150px);
+            }
+            100%{
+                transform: translateX(0);
+                color: $colorPrimario;
+            }
+        }
+    }
+}
+.seccion_5{
+    @include secciones($imgfondo: map-get($var, seccion5), $altura: 700px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $colorPrimario;
+    .bloque_4{
+        width: 500px;
+        padding-left: 50px;
+        font-size: 1.5em;
     }
 }

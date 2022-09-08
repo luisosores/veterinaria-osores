@@ -1,11 +1,11 @@
 @import 
+"./partials/extends",
+"./partials/mixins",
+"./partials/maps",
 "./partials/variables",
 "./partials/header", 
 "./partials/main" ,
-"./partials/footer",
-"./partials/extends",
-"./partials/mixins",
-"./partials/maps";
+"./partials/footer";
 
 *{
     margin: 0;
