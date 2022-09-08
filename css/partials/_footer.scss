@@ -1,27 +1,42 @@
-.footer{
-    height: 600px;
-    color: #fff;
-    background-color: aqua;
-    ol{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li{
-            margin-bottom: 5px;
-        }
+.footer_1{
+    @include secciones($imgfondo: $backgroundFooter, $altura: 300px);
+    color: $colorPrimario;
+    @extend %backgroundfondo;
+    @extend %bloquesflex;
+    h5{
+        color: $colorTerciario;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    h6{
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    span{
+        color: $colorSecundario;
+    }
+}
+.footer_2{
+    @include secciones($imgfondo: $colorFondoFooter, $altura: 130px);
+    color: $colorPrimario;
+    h3{
+        padding-top: 20px;
+        @include tamañoTexto($tamanio:1.3em, $espacio: 3px, $color: $colorPrimario, $anchura: false);
     }
     .caja_icono{
-        padding-top: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
         .iconosSociales{
             width: 20px;
             height: 20px;
             margin-right: 15px;
-            background-color: #fff;
+            background-color: $colorQuaternario;
             cursor: pointer;
             transition: all 0.7s ease;
             &:hover{
                 transform: scale(1.5, 1.5);
-                box-shadow: 0 0 15px #fff;
+                background-color: $colorTerciario;
+                box-shadow: 0 0 15px $colorTerciario;
             }
         }
     }

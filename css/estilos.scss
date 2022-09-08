@@ -1,4 +1,12 @@
-@import "./partials/header", "./partials/main" ,"./partials/footer", "./partials/variables";
+@import 
+"./partials/variables",
+"./partials/header", 
+"./partials/main" ,
+"./partials/footer",
+"./partials/extends",
+"./partials/mixins",
+"./partials/maps";
+
 *{
     margin: 0;
     padding: 0;

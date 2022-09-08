@@ -1,0 +1,44 @@
+/*#header{
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    .navbar{
+        padding: 50px 0;
+        .navbar-brand{
+            font-weight: bold;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            color: $colorPrimario !important;
+        }
+        .nav-item{
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-left: 50px;
+            --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+            &::after{
+                content: "";
+                display: block;
+                background: $colorSecundario;
+                width: 100%;
+                margin-top: 3px;
+                height: 3px;
+                clip-path: var(--clippy);
+                transition: clip-path .6s;
+            }
+            &:hover{
+                --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            .nav-link{
+                letter-spacing: 2px;
+                font-size: 1em;
+                font-weight: 700;
+                color: $colorPrimario !important;
+                &:hover{
+                    color: $colorSecundario;
+                    border-radius: 5px;
+                    transition: all 0.6 ease 0s;
+                }
+            }
+        }
+    }
+}*/

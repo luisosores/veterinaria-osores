@@ -1,0 +1,15 @@
+@mixin secciones($imgfondo, $altura) {
+    background: $imgfondo;
+    height: $altura;
+}
+@mixin tamanioTexto($tamanio, $espacio, $color, $anchura){
+    font-size: $tamanio;
+    letter-spacing: $espacio;
+    color: $color;
+    @if($anchura)
+    {
+        font-weight: bold;
+    }@else{
+        font-weight: 100;
+    }
+}

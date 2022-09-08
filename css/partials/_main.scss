@@ -1,0 +1,62 @@
+.seccion_1{
+    background: map-get($var, seccion1);
+    height: 700px;
+    @extend %backgroundfondo;
+    .bloque_1{
+        padding-left: 50px;
+        width: 500px;
+        h1{
+            @include tamanioTexto($tamanio: 3em, $espacio: 2px, $color: transparent, $anchura: false);
+            animation-name: textoDesplazamiento;
+            animation-fill-mode: forwards;
+            animation-duration: 3s;
+            @keyframes textoDesplazamiento{
+                0%{
+                    transform: translateX(150px);
+                }
+                100%{
+                    transform: translateX(0);
+                    color: $colorPrimario;
+                }
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.seccion_2{
+    .bloque_1{
+        padding: 100px 10px 100px 10px;
+        @extend %bloquesflex;
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        h2{
+            @include tamanioTexto($tamanio: 2em, $espacio: 1px, $color: $colorTerciario, $anchura: true);
+            padding-top: 30px;
+        }
+        p{
+            color: $colorQuaternario;
+            font-size: 1.2em;
+        }
+        
+    }
+}
+.seccion_3{
+    background-image: map-get($var, seccion3);
+    height: 500px;
+    @extend %backgroundfondo;
+    .bloque_2{
+        padding-left: 10px;
+        width: 400px;
+        h2{
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
